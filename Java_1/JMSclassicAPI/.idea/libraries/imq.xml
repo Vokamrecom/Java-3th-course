@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="imq">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../2 курс/4 семестр/Java/glassfish5/mq/lib/imq.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
