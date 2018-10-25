@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: hela
+  Date: 11/10/2018
+  Time: 01:44
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+    <title>Title</title>
+</h:head>
+
+<h:body>
+    <h:outputLabel value="Succsed" rendered="#{bean.tran != false}"/>
+    <h:panelGrid width="100%" rendered="#{bean.tran== false}">
+        #{bean.errmsg = "tran is not sucseed"}
+        <ui:include src="error.xhtml" />
+    </h:panelGrid>
+    <h:form>
+        <h:commandButton value="LogInPage" action="login"></h:commandButton>
+    </h:form>
+
+    <h:graphicImage name="images/0337820e98325b33612109934fe7f60c.gif"/>
+</h:body>
+
+</html>

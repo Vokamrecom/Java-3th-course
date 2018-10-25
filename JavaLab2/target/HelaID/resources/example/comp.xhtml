@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: hela
+  Date: 10/10/2018
+  Time: 23:37
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:cc="http://xmlns.jcp.org/jsf/composite">
+
+<h:head>
+    <title>Title</title>
+</h:head>
+
+<h:body>
+    <cc:interface>
+        <cc:attribute name="owner"/>
+        <cc:attribute name="cardn"/>
+        <cc:attribute name="available"/>
+        <cc:attribute name="money"/>
+    </cc:interface>
+
+    <cc:implementation>
+        <h:panelGrid columns="2">
+            <h:outputLabel for="owner" value="Owner: " />
+            <h:outputLabel id="owner" value="#{cc.attrs.owner}" />
+            <h:outputLabel for="cardn" value="Card Number: " />
+            <h:outputLabel id="cardn" value="#{cc.attrs.cardn}" />
+            <h:outputLabel for="available" value="Available Until: " />
+            <h:outputLabel id="available" value="#{cc.attrs.available}" />
+            <h:outputLabel for="money" value="On card: " />
+            <h:outputLabel id="money" value="#{cc.attrs.money}" />
+        </h:panelGrid>
+    </cc:implementation>
+</h:body>
+
+</html>
